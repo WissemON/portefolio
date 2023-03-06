@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A1828;
+}
+
+header { 
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.box-gauche {
+    width: 100%;
+}
+
+.box-droite {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link {
+    text-decoration: none;
+    color: #178582;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+}
+
+.ico_head {
+    width: 35px;
+    margin: 0 2rem;
+}
+
+h1 {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 70px;
+    color: #BFB981;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.intro {
+    width: 100%;
+    background-image: url('./ressources/sl_082120_34200_12.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-box {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.white-border {
+    margin: 0.5rem;
+    border: 7px solid #FFFFFF;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2rem;
+}
+
+p {
+    color: white;
+}
