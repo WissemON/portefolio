@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'DragonWarrior';
+    src: url(./ressources/fonts/dragon-warrior-iii.ttf);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: #BFB981;
+}
+
+header { 
+    width: 100%;
+    background-color: #0A1828;
+    height: 20vh;
+
+}
+
+nav {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.box-gauche {
+    width: 100%;
+}
+
+.box-droite {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link {
+    text-decoration: none;
+    color: #178582;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.ico_head {
+    width: 35px;
+    margin: 0 2rem;
+}

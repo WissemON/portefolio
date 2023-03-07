@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'DragonWarrior';
+    src: url(./ressources/fonts/dragon-warrior-iii.ttf);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +13,7 @@
 
 body {
     background-color: #0A1828;
+  
 }
 
 header { 
@@ -34,6 +42,7 @@ nav {
     color: #178582;
     font-size: 1.2rem;
     margin: 0 2rem;
+    font-family: 'Inter', sans-serif;
 }
 
 .ico_head {
@@ -46,11 +55,13 @@ h1 {
     text-align: center;
     font-size: 70px;
     color: #BFB981;
+    font-family: 'Inter', sans-serif;
 }
 
 h2 {
     text-align: center;
     color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .intro {
@@ -60,18 +71,124 @@ h2 {
     background-repeat: no-repeat;
 }
 
+.flex-intro {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    
+}
+
 .bg-box {
     background-color: rgb(0, 0, 0, 0.8);
+    padding: 0.1rem;
 }
 
 .white-border {
-    margin: 0.5rem;
     border: 7px solid #FFFFFF;
     border-radius: 5px;
     width: 100%;
+    height: 100%;
     padding: 2rem;
+    font-family: 'DragonWarrior';
 }
 
 p {
     color: white;
+}
+
+.pres {
+    width: 600px;
+    height: 250px;
+    margin: auto;
+    margin-top: 120px;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.pdp {
+    position: relative;
+    left: 250px;
+}
+.project {
+    width: 180px;
+    margin: auto;
+   
+}
+
+.projs {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 600px;
+    font-size: 1.3rem;
+}
+
+.skills {
+    width: 250px;
+    margin: auto;
+}
+
+.skill-list {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 600px;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.flex-in {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-item {
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+}
+
+.pop_agence {
+    display: none;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    top: 0%;
+}
+
+#close {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.screen {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+#agence {
+    cursor: pointer;
+}
+
+#snake {
+    cursor: pointer;
+}
+
+#voy {
+    display: none;
+}
+
+#sna {
+    display: none;
+}
+
+#agence:hover > #voy {
+    display: inline-block;
+}
+
+#snake:hover > #sna {
+    display: inline-block;
 }

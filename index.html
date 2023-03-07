@@ -31,38 +31,57 @@
 
     <main>
         <section class="intro">
-            <img src="./ressources/profil.svg" alt="Ma photo (pixélisé pour le style heiiin)">
-            <div class="bg-box pres"><div class="white-border">
-            <p>
-             Salut! C'est Wissem. Je suis encore un jeune developpeur en recherche constante d'experience. Si c'est pour du JavaScript ou PHP, venir absolument me voir !!
-            </p></div></div>
+            <div class="flex-intro">
+                <img src="./ressources/profil.svg" alt="Ma photo (pixélisé pour le style heiiin)" class="pdp">
+                <div class="bg-box pres"><div class="white-border">
+                <p>
+                 Salut! C'est Wissem. Je suis encore un jeune developpeur en recherche constante d'experience. Si c'est pour du JavaScript ou PHP, venir absolument me voir !!
+                </p></div></div>
+            </div>
         </section>
+        <div class="bg-box pop_agence"><div class="white-border">
+            <p><span id="close">X</p></span>
+            
+            <img src="./ressources/screen_voyage.svg" alt="" class="screen">
         
+        </div></div>
+        </div>
         <section>
-        <div class="bg-box"><div class="white-border">
+        <div class="bg-box project"><div class="white-border">
             <p>
              Projets
             </p></div></div>
 
-            <div class="bg-box"><div class="white-border">
-                <p>Agence de voyage</p>
-                <p>Jeu Snake</p>
+            <div class="bg-box projs"><div class="white-border ">
+                <p id="agence"><span id="voy">></span> Agence de voyage</p>
+                <p class="skill-item" id="snake"><span id="sna">></span> Jeu Snake</p>
                 </div></div>
         </section>
 
         <section>
-            <div class="bg-box"><div class="white-border">
+            <div class="bg-box skills"><div class="white-border">
                 <p>
                  Competences
                 </p></div></div>
     
-                <div class="bg-box"><div class="white-border">
-                    <p>Agence de voyage</p>
-                    <p>Jeu Snake</p>
+                <div class="bg-box skill-list"><div class="white-border flex-in">
+                    <div>
+                        <p>HTML 5</p>
+                        <p class="skill-item">CSS 3</p>
+                        <p>MySQL</p>
+                    </div>
+                    <div>
+                        <p>Bootstrap</p>
+                        <p class="skill-item">Javascript</p>
+                        <p>Wordpress</p>
+                    </div>
+                    <p>PHP</p>
                     </div></div>
             </section>
     </main>
 
     <p>Copyright © Wissem Boussaha</p>
+
+    <script src="./pop.js"></script>
 </body>
 </html>
