@@ -13,7 +13,8 @@
 
 body {
     background-color: #0A1828;
-  
+    transition: background 0.8s linear;
+
 }
 
 header { 
@@ -38,6 +39,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .link {
@@ -59,6 +61,7 @@ h1 {
     font-size: 70px;
     color: #BFB981;
     font-family: 'Inter', sans-serif;
+    transition: color 0.8s linear
 }
 
 h2 {
@@ -195,3 +198,110 @@ section {
 #snake:hover > #sna {
     display: inline-block;
 }
+
+.copyright {
+    color: #178582;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.light-mode {
+   background-color: #BFB981;
+}
+
+.h1-dark {
+    color: #0A1828;
+    
+}
+
+.label-light {
+    background-color: #fdf7f7 !important;
+    
+}
+
+.ball-dark {
+    background-color: #111 !important;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+
+  }
+
+.label {
+    width: 50px;
+    height: 26px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    margin: auto;
+    transition: ease-in 0.8s;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+
+  .check-for-dark {
+    margin-top: 1rem;
+  }
+  
+
+@media screen and (max-width: 1372px) {
+
+    .intro {
+        background-position: left;
+        
+    }
+    .flex-intro {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .pdp {
+       width: 40%;
+       position: initial;
+       left: 0%;
+    }
+}
+
+@media screen and (max-width: 621px) {
+  .pres {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .pres {
+      width: 450px;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 472px) {
+    .pres {
+      width: 350px;
+      font-size: 1rem;
+    }
+    .skill-list {
+        font-size: 0.7rem;
+    }
+  }

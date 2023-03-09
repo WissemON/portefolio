@@ -12,7 +12,7 @@ function fetchData(url) {
     });
 }
 
-// fonction pour afficher les données dans la page HTML
+// fonction pour afficher dans la page HTML
 function renderData(data) {
   let img = "./ressources/kain.png";
   container.innerHTML = "";
@@ -38,7 +38,7 @@ function renderData(data) {
   });
 }
 
-// événement input sur l'élément input
+// événement input sur l'input
 search.addEventListener("input", function(event) {
   let searchValue = event.target.value;
   let searchUrl = `https://www.moogleapi.com/api/v1/characters/search?name=${searchValue}`;
@@ -52,4 +52,7 @@ search.addEventListener("input", function(event) {
 let url = "https://www.moogleapi.com/api/v1/characters";
 fetchData(url).then(function(data) {
   renderData(data);
+  
 });
+
+

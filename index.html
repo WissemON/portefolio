@@ -15,9 +15,10 @@
     <header>
          <nav>
             
-                        <div class="box-gauche animate__bounceInLeft">
+                        <div class="box-gauche animate__animated animate__bounceInLeft">
                             <a href="./index.html" class="link">Accueil</a>
                             <a href="./api_page.html" class="link">API</a>
+                            <a href="./ressources/" download="test.pdf"><img src="./ressources/CV_icon.png" alt="" class="ico_head"></a>
                         </div>
                         <img src="./ressources/icon_accueil.png" alt="" class="logo">
                         <div class="box-droite animate__animated animate__bounceInRight">
@@ -31,6 +32,15 @@
 
          <h1 class="animate__bounce animate__animated">Wissem Boussaha</h1>
          <h2 class="animate__animated ">Développeur Web</h2>
+
+         <div class="check-for-dark">
+            <input type="checkbox" class="checkbox" id="checkbox">
+          <label for="checkbox" class="label" id="label_input">
+            <i class="fas fa-moon"></i>
+            <i class='fas fa-sun'></i>
+            <div class='ball' id="ball"></div>
+          </label>
+        </div>
     </header>
 
     <main>
@@ -84,8 +94,9 @@
             </section>
     </main>
 
-    <p>Copyright © Wissem Boussaha</p>
+    <p class="copyright">Copyright © Wissem Boussaha</p>
 
     <script src="./pop.js"></script>
+    <script src="./light.js"></script>
 </body>
 </html>
