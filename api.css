@@ -123,3 +123,17 @@ input {
     height: 40px;
     font-size: 2rem;
 }
+
+@media screen and (max-width: 1188px) {
+
+    .cards {
+        grid-template-columns: 329px 329px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cards {
+        grid-template-columns: 329px;
+    }
+}
