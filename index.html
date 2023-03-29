@@ -18,20 +18,22 @@
                         <div class="box-gauche animate__animated animate__bounceInLeft">
                             <a href="./index.html" class="link">Accueil</a>
                             <a href="./api_page.html" class="link">API</a>
-                            <a href="./ressources/" download="test.pdf"><img src="./ressources/CV_icon.png" alt="" class="ico_head"></a>
+                            <a href="./ressources/" download="test.pdf"><img src="./ressources/CV_icon.png" alt="Logo CV pour DL" class="ico_head"></a>
                         </div>
-                        <img src="./ressources/icon_accueil.png" alt="" class="logo">
+                        <img src="./ressources/icon_accueil.png" alt="Logo d'en-tête pour le site" class="logo">
                         <div class="box-droite animate__animated animate__bounceInRight">
-                            <a href="mailto:wissem.boussaha@outlook.fr"><img src="./ressources/Gmail_icon_(2020).svg.png" alt="Gmail" class="ico_head"></a>
-                         <a href=""><img src="./ressources/174857.png" alt="Linkedin" class="ico_head"></a>
-                            <a href=""><img src="./ressources/25231.png" alt="Github" class="ico_head"></a>
+                            <a href="mailto:wissem.boussaha@outlook.fr"><img src="./ressources/Gmail_icon_(2020).svg.png" alt="icone Gmail" class="ico_head"></a>
+                         <a href=""><img src="./ressources/174857.png" alt="icone Linkedin" class="ico_head"></a>
+                            <a href=""><img src="./ressources/25231.png" alt="icone Github" class="ico_head"></a>
                         </div>
                        
                 
          </nav>
 
          <h1 class="animate__bounce animate__animated">Wissem Boussaha</h1>
-         <h2 class="animate__animated ">Développeur Web</h2>
+         <h2 class="animate__animated french">Développeur Web</h2>
+         <h2 class="english">Web Developper</h2>
+
 
          <div class="check-for-dark">
             <input type="checkbox" class="checkbox" id="checkbox">
@@ -41,6 +43,11 @@
             <div class='ball' id="ball"></div>
           </label>
         </div>
+
+        <div class="flags_container">
+            <img src="./ressources/French_Flag.svg" alt="Drapeau Français" id="fr_flag" class="light_select">
+            <img src="./ressources/english_flag.svg" alt="Drapeau Anglais" id="en_flag">
+         </div>
     </header>
 
     <main>
@@ -48,40 +55,50 @@
             <div class="flex-intro">
                 <img src="./ressources/profil.svg" alt="Ma photo (pixélisé pour le style heiiin)" class="pdp animate__animated animate__fadeInTopLeft animated__slower">
                 <div class="bg-box pres animate__animated animate__slow animate__slideInRight"><div class="white-border">
-                <p>
+                <p class="french">
                  Salut! C'est Wissem. Je suis encore un jeune developpeur en recherche constante d'experience. Si c'est pour du JavaScript ou PHP, venir absolument me voir !!
-                </p></div></div>
+                </p>
+                <p class="english">
+                    Hey! It's Wissem. I'm still a young web developper who's hungry for more experience. If it's about Javascript or PHP, come seek me !!
+                   </p></div></div>
             </div>
         </section>
         <div class="bg-box pop_agence"><div class="white-border">
             <p><span id="close">X</p></span>
             
-            <img src="./ressources/screen_voyage.svg" alt="" class="screen">
+            <img src="./ressources/screen_voyage.svg" alt="capture d'écran du site agence de voyage" class="screen">
         
         </div></div>
         </div>
         <section>
         <div class="bg-box project"><div class="white-border">
-            <p>
+            <p class="french">
              Projets
-            </p></div></div>
+            </p>
+            <p class="english">Projects
+               </p></div></div>
 
-            <div class="bg-box projs"><div class="white-border ">
-                <p id="agence"><span id="voy">></span> Agence de voyage</p>
-                <p class="skill-item" id="snake"><span id="sna">></span> Jeu Snake</p>
+            <div class="bg-box projs"><div class="white-border">
+                <p id="agence" class="french"><span id="voy">></span> Agence de voyage</p>
+                <p id="agence" class="english"><span id="voy">></span> Travel agency</p>
+                <p class="skill-item french" id="snake"><span id="sna">></span> Jeu Snake</p>
+                <p class="skill-item english" id="snake" ><span id="sna">></span> Snake Game</p>
                 </div></div>
         </section>
 
         <section>
             <div class="bg-box skills"><div class="white-border">
-                <p>
+                <p class="french">
                  Competences
-                </p></div></div>
+                </p>
+                <p class="english">
+                    Skills
+                   </p></div></div>
     
                 <div class="bg-box skill-list"><div class="white-border flex-in">
                     <div>
-                        <p>HTML 5</p>
-                        <p class="skill-item">CSS 3</p>
+                        <p>HTML5</p>
+                        <p class="skill-item">CSS3</p>
                         <p>MySQL</p>
                     </div>
                     <div>
@@ -98,5 +115,6 @@
 
     <script src="./pop.js"></script>
     <script src="./light.js"></script>
+    <script src="./language.js"></script>
 </body>
 </html>
