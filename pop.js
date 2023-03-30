@@ -18,19 +18,19 @@ agences.forEach((agence) => {
 
 closeAgence.forEach((close, index) => {
     close.addEventListener('click', event => {
-        popAgence[index].style.display = "none";
+        popAgence[0].style.display = "none";
     })
 });
 
 snakes.forEach((snake, index) => {
     snake.addEventListener('click', event => {
-        popSnake[index].style.display = "block";
+        popSnake[0].style.display = "block";
     })
 });
 
 closeSnake.forEach((close, index) => {
     close.addEventListener('click', event => {
-        popSnake[index].style.display = "none";
+        popSnake[0].style.display = "none";
     })
 });
     
