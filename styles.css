@@ -173,7 +173,12 @@ section {
     top: 0%;
 }
 
-#close_agence {
+.close_agence {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.close_snake {
     font-size: 2rem;
     cursor: pointer;
 }
@@ -184,12 +189,19 @@ section {
     margin: auto;
 }
 
-#agence {
+.screen_snake {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+.agence {
     cursor: pointer;
 }
 
-#snake {
-    cursor: pointer;
+.snake {
+    cursor: pointer !important;
+    
 }
 
 #voy {
@@ -200,11 +212,11 @@ section {
     display: none;
 }
 
-#agence:hover > #voy {
+.agence:hover > #voy {
     display: inline-block;
 }
 
-#snake:hover > #sna {
+.snake:hover > #sna {
     display: inline-block;
 }
 

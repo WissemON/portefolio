@@ -1,15 +1,38 @@
-let agence = document.querySelector('#agence');
-let popAgence = document.querySelector('.pop_agence');
+let agences = document.querySelectorAll('.agence');
+let popAgence = document.querySelectorAll('.pop_agence');
+let snakes = document.querySelectorAll('.snake');
+let closeAgence = document.querySelectorAll('.close_agence');
+let closeSnake = document.querySelectorAll('.close_snake');
+let popSnake = document.querySelectorAll('.pop_snake');
 
 
+document.addEventListener('DOMContentLoaded', () => {
 
-agence.addEventListener(
-    'click', event => {
-        popAgence.style.display = "block";
-    });
 
-close.addEventListener(
-    'click', Close => {
-        popAgence.style.display = "none";
-    }
-    )
+agences.forEach((agence) => {
+    agence.addEventListener('click', event => {
+        console.log(popAgence);
+        popAgence[0].style.display = "block";
+    })
+});
+
+closeAgence.forEach((close, index) => {
+    close.addEventListener('click', event => {
+        popAgence[index].style.display = "none";
+    })
+});
+
+snakes.forEach((snake, index) => {
+    snake.addEventListener('click', event => {
+        popSnake[index].style.display = "block";
+    })
+});
+
+closeSnake.forEach((close, index) => {
+    close.addEventListener('click', event => {
+        popSnake[index].style.display = "none";
+    })
+});
+    
+
+});
