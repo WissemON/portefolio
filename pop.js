@@ -1,8 +1,6 @@
 let agence = document.querySelector('#agence');
 let popAgence = document.querySelector('.pop_agence');
-let close = document.querySelector('#close');
-let hoverVoyage = document.querySelector('#voy');
-let hoverSnake = document.querySelector('#sna');
+
 
 
 agence.addEventListener(

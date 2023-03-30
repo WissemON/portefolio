@@ -164,7 +164,16 @@ section {
     top: 0%;
 }
 
-#close {
+.pop_snake {
+    display: none;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    left: 5%;
+    top: 0%;
+}
+
+#close_agence {
     font-size: 2rem;
     cursor: pointer;
 }

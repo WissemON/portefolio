@@ -117,11 +117,14 @@ input {
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    border: 1px black solid;
+    border: 2px rgb(109, 109, 109) solid;
     border-radius: 5px;
     width: 420px;
     height: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: rgb(169,169,169, 0.7);
+
+    padding: 12px 20px;
 }
 
 @media screen and (max-width: 1188px) {
