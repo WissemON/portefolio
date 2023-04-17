@@ -162,6 +162,7 @@ section {
     height: 100%;
     left: 5%;
     top: 0%;
+    z-index: 1000000;
 }
 
 .pop_snake {
@@ -171,6 +172,7 @@ section {
     height: 100%;
     left: 5%;
     top: 0%;
+    z-index: 1000000;
 }
 
 .close_agence {
@@ -307,6 +309,15 @@ section {
   .check-for-dark {
     margin-top: 1rem;
   }
+
+  section {
+    margin-bottom: 10rem;
+  }
+
+  .list-unstyled {
+    display: none;
+    
+  }
   
 
 @media screen and (max-width: 1372px) {
@@ -321,15 +332,97 @@ section {
         padding: 1rem;
     }
     .pdp {
-       width: 40%;
+       width: 18rem;
        position: initial;
        left: 0%;
     }
 }
 
-@media screen and (max-width: 944px) {
+@media screen and (max-width: 960px) {
     .pres {
       width: 500px;
+    }
+
+    .box-gauche {
+        display: none;
+    }
+
+    .box-droite {
+        display: none;
+    }
+
+    #burger {
+        width:1.8rem;
+        height:2px;
+        background:rgb(203, 29, 209);
+        display:inline-block;
+        position:fixed;
+        z-index: 10000;
+        left: 5%;
+        top: 8%;
+        transition: all 1s ease;
+      }
+    .list-unstyled {
+        padding-top: 20%;
+        position: fixed;
+        top: 0;
+        left: -150%;
+        font-size: 3rem;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        text-align: center;
+        transition: all 1s ease-in;
+        
+    }
+
+    li {
+        margin-top: 1rem;
+    }
+
+    .li_link {
+        text-decoration: none;
+        color:rgb(203, 29, 209);
+        text-shadow: #111 2px 2px 2px;
+
+    }
+
+    #burger::before,
+    #burger::after {
+    content:'';
+    width:1.8rem;
+    height:2px;
+    background:rgb(203, 29, 209);
+    display:inline-block;
+    position:absolute;
+    transform-origin: center;
+    transition: all 0.3s ease;
+    }
+    #burger::before {
+    top:-7px;
+    }
+    #burger::after {
+    top:7px;
+    }
+
+    #burger.open {
+        background:transparent; /* la barre du milieu disparait */
+    }
+    /* celles du haut et du bas s'inclinent pour former une croix */
+    #burger.open::before {
+        transform: rotate(45deg); 
+        top:0;
+    }
+    #burger.open::after {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .list-unstyled.open {
+        display: block;
+        left: 0;
+        transition: all 1s ease-out;
     }
   }
 
